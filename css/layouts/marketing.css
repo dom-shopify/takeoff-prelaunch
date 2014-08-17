@@ -534,6 +534,12 @@ width: 125%;
 
 }
 
+.pure-u-md-3-5 {
+width: 40%;
+margin-left: 13%;
+text-align: center;
+}
+
 #Field4, #title4 {
     display: none;
 }
@@ -563,7 +569,7 @@ width: 125%;
     font-size: 18px;
     /* position: center; */
     text-align: center;
-    width: 50%; 
+    width: 48%; 
 
 }
 
