@@ -359,7 +359,7 @@ body.down header.clone {
     background:transparent;
     height:42px;
     border:1px solid #d8d8d8;
-    width:350px;
+    width: 85%;
     
 
 }
@@ -388,13 +388,12 @@ body.down header.clone {
     font-weight: 700;
 
 }
-.field  {
+.field {
     list-style: none;
     border: 1px solid rgb(166, 166, 166);
     padding: .7em 1em;
     border-radius: 5px;
-    width:350px;
-
+    width: 85%;
 }
 
 .pure-u-md-3-5 {
