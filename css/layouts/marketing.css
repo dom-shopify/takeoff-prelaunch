@@ -319,7 +319,7 @@ body.down header.clone {
 #subhead-downloads {
     padding: 0;
     margin-left: 0;
-    margin-top: 5%;
+    margin-top: 15%;
     padding-left: 0;
     text-align: center;
 
@@ -330,6 +330,7 @@ body.down header.clone {
     margin-left: 0;
     padding-left: .5em;
     text-align: center;
+    padding: 0 1em;
 }
 
 
@@ -347,11 +348,12 @@ body.down header.clone {
 
 
 #app-store-img{
-    max-width: 40%;
+    display: none;
+   /* max-width: 40%;
     height: auto;
     margin: 0 auto;
     display: block;
-    margin-top: 15%;
+    margin-top: 15%;*/
 }
 
 #Field2 {
