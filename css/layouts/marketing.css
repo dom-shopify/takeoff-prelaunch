@@ -306,6 +306,141 @@ body.down header.clone {
     background: #111;
 }
 
+
+/*Mobile- Appstore Pages*/
+
+#splash-downloads {
+    margin-top: 10%;
+    margin-left: 0;
+    text-align: left;
+    
+}
+
+#subhead-downloads {
+    padding: 0;
+    margin-left: 0;
+    margin-top: 5%;
+    padding-left: 0;
+    text-align: center;
+
+}
+
+#subhead-p {
+    margin-top: -8%;
+    margin-left: 0;
+    padding-left: .5em;
+    text-align: center;
+}
+
+
+
+#get-notified {
+    padding: 0 0 0 0px;
+    margin-left: 0;
+    width: 125%;
+}
+
+.notranslate      {
+    list-style: none;
+    padding-top: 5px; 
+}
+
+
+#app-store-img{
+    max-width: 40%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15%;
+}
+
+#Field2 {
+    border: 2px solid rgb(166, 166, 166);
+    background:transparent;
+    height:42px;
+    border:1px solid #d8d8d8;
+    width:350px;
+    
+
+}
+#field3 {
+    display: inline;
+}
+
+#Form27{
+    padding: 20px;
+}
+#Form27 input{
+        border: none;
+        border-radius: 10px;
+        padding: 1;
+        width:350px; 
+    }
+
+#Form27 label{
+    padding-top: 5px; 
+}
+
+
+.desc {
+    list-style: none;
+    font-size: 22px;
+    font-weight: 700;
+
+}
+.field  {
+    list-style: none;
+    border: 1px solid rgb(166, 166, 166);
+    padding: .7em 1em;
+    border-radius: 5px;
+    width:350px;
+
+}
+
+.pure-u-md-3-5 {
+width: 40%;
+margin-left: 0;
+text-align: center;
+}
+
+#Field4, #title4 {
+    display: none;
+}
+
+#comment {
+    display: none;
+}
+
+.buttons {
+    list-style: none;
+}
+.hide  {
+     display: none;
+}
+
+#saveForm {
+    background-color: #21AA48;
+    color: #fff;
+    /* padding: 0.5em 2em; */
+    border-radius: 5px;
+    padding: .7em 1em .7em 1em;
+    margin-left: 0;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 18px;
+    /* position: center; */
+    text-align: center;
+    width: 48%; 
+
+}
+
+#mobile-web{
+    text-align: center;
+    margin-top: 5%;
+}
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
@@ -445,17 +580,13 @@ text-align: center;
 
 }
 
-
-
-
-}
-
 /*Desktop Appstore Pages*/
 
 #splash-downloads {
     margin-top: 10%;
     margin-left: 0;
     text-align: left;
+
 }
 
 #subhead-downloads {
@@ -471,6 +602,7 @@ text-align: center;
     margin-top: -8%;
     margin-left: -20%;
     padding-left: .5em;
+    text-align: left
 }
 
 
@@ -536,7 +668,7 @@ width: 125%;
 
 .pure-u-md-3-5 {
 width: 40%;
-margin-left: 13%;
+margin-left: 0;
 text-align: center;
 }
 
@@ -578,8 +710,8 @@ text-align: center;
     margin-top: 5%;
 }
 
-/*Mobile- Appstore Pages*/
 
+}
 
 
 /*
