@@ -476,20 +476,31 @@ text-align: center;
 
 
 header {
-    position: fixed;
+  position: fixed;
   font-size: 24px;
   line-height: 48px;
   height: 48px;
   text-align: left;
   padding-left: 20px;
-  padding-top: 3px;
+  padding-top: 6px;
   background: transparent;
+  width: 100%;
+
+     // set animation
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
   
 }
 
 header img{
-    width: 35%;
+    width: 20%;
     z-index: 0;
+}
+
+header.sticky {
+  background: #fff;
+  opacity: 1;          
+  
 }
 
 /*
