@@ -65,7 +65,7 @@
 <div class="splash-container">
     <div class="splash pure-g" id="splash-downloads">
             <div class="pure-u-1 pure-u-md-1-2">
-                 <img class="pure-img-responsive" alt="Homie"  src="../img/common/single-screen.png" id="app-store-img"></img>
+                 <img class="pure-img-responsive" alt="Homie"  src="../img/common/single-screen.jpg" id="app-store-img"></img>
             </div>
 
             <div class="pure-u-1 pure-u-md-1-2">
