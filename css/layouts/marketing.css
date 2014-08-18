@@ -325,7 +325,7 @@ body.down header.clone {
 #subhead-downloads {
     padding: 0;
     margin-left: 0;
-    margin-top: 15%;
+    margin-top: 7%;
     padding-left: 0;
     text-align: center;
 
@@ -449,17 +449,15 @@ text-align: center;
     margin-top: 5%;
 }
 
-.splash.sticky {
+.splash {
     margin-top: 10%;
-     // set animation
-            -webkit-transition: all 0.4s ease;
-            transition: all 0.4s ease;
+     
 }
 
-header{
+/*header{
   position: fixed;
   /*display: block;
-  margin: 0 auto;*/
+  margin: 0 auto;
   width: 99%;
   text-align: center;
   padding-top: 9px;
@@ -474,10 +472,11 @@ header{
             -webkit-transition: all 0.4s ease;
             transition: all 0.4s ease;
 
-}
+}*/
 
 
-header.sticky {
+header {
+    position: fixed;
   font-size: 24px;
   line-height: 48px;
   height: 48px;
@@ -488,8 +487,8 @@ header.sticky {
   
 }
 
-header.sticky  img{
-    width: 15%;
+header img{
+    width: 35%;
 }
 
 /*
@@ -545,11 +544,15 @@ header{
 
 }
 
+header img{
+    width: 17%;
+}
 
-header.sticky {
+
+/*header.sticky {
   position: fixed;
   /*display: block;
-  margin: 0 auto;*/
+  margin: 0 auto;
   width: 99%;
   text-align: center;
   padding-top: 9px;
@@ -569,7 +572,7 @@ header.sticky {
 header.sticky  img{
     
 }
-
+*/
 
 
  
