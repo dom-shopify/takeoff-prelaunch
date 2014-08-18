@@ -52,14 +52,20 @@ $(window).scroll ->
 </head>
 <body>
 
-<div class="header">
+<div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+    <header>
+        <img src="img/common/homie-logo-big.png"  alt="Homie" id="header-logo" /> 
+    </header><!-- width="782" height="2000" -->
+</div>
+
+<!-- <div class="header">
     <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading" href="/.html"></a>
         <div id="logo">
             <img class="pure-img-responsive" alt="Homie"  src="img/common/homie-logo-big.png"></img>
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="splash-container">
     <div class="splash pure-g">
@@ -86,128 +92,30 @@ $(window).scroll ->
     </div>
 </div>
 
-</body>
-</html>
-<!-- 
-<div class="content-wrapper">
-    <div class="content">
-        <h2 class="content-head is-center">We Match Agents To You</h2>
+<!-- import jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+<!-- write script to toggle class on scroll -->
+<script>
+    
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");
+    }
+});
 
-                <h3 class="content-subhead">
-                    <i class="fa fa-rocket"></i>
-                    Social Network
-                </h3>
-                <p>
-                    Do you know the same people, or have friends of friends?
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-mobile"></i>
-                    Lifestyle
-                </h3>
-                <p>
-                    Do you share the same type of values in how you live your life?
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-th-large"></i>
-                    Interests
-                </h3>
-                <p>
-                    Are you into the same activities outside of work?
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-check-square-o"></i>
-                    Plays Nice
-                </h3>
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="ribbon l-box-lrg pure-g" id="download-banner">
-        <div class="pure-u-1">
-            <h2 class="content-head content-head-ribbon">Download Now</h2>
-            <div class="pure-g">
-                        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                            <a href="http://purecss.io"><img src="img/common/Available_on_the_App_Store_0.png" alt="Get in the App Store" id="apple"></a>
-                        </div>
-                        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                            <a href="http://purecss.io"><img src="img/common/button-get-it-on-google-play.png" alt="Get in with Google Play" id="android"></a>
-                        </div>
-                    </div>
-        </div>
-    </div>
-
-    <div class="content">
-        <h2 class="content-head is-center">Are You An Agent?</h2>
-
-        <div class="pure-g">
-            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                <form class="pure-form pure-form-stacked">
-                    <fieldset>
-
-                        <label for="name">Your Name</label>
-                        <input id="agent_name" type="text" placeholder="Your Name">
-
-
-                        <label for="email">Your Email</label>
-                        <input id="agent_email" type="email" placeholder="Your Email">
-
-                        <label for="city">Your City</label>
-                        <input id="agent_city" type="text" placeholder="Your City">
-
-
-                        <button type="submit" class="pure-button">Sign Up</button>
-                    </fieldset>
-                </form>
-            </div>
-
-            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-                <h4>We Want To Hear From You!</h4>
-                <p>
-                    Agents who work with Homie are able to better have stronger connections with their clients which is better for everyone involved.
-                </p>
-
-                <h4>Setup a Free Profile in 3 mins</h4>
-                <p>
-                    After connecting your Facebook account we'll simply ask you some matching criteria and you'll start to get connected.
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="footer l-box is-center">
-Copyright HOMIE, INC. 2014
-    </div>
-
-</div>
-
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        var $header = $("header"),
-            $clone = $header.before($header.clone().addClass("clone"));
-        
-        $(window).on("scroll", function() {
-            var fromTop = $(window).scrollTop();
-            $("body").toggleClass("down", (fromTop > 400));
-        });
-    });
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('.splash').addClass("sticky");
+    }
+    else{
+        $('.splash').removeClass("sticky");
+    }
+});
 </script>
-
-
-
 </body>
 </html>
- -->
+

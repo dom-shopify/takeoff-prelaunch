@@ -16,6 +16,8 @@ body {
     color: #7f8c8d;
     font-size: 13px;
     font-family: "lato";
+    overflow-y: scroll;
+    overflow-x: none;
 }
 
 h1,
@@ -32,6 +34,9 @@ label {
 h4, label {
     color: orange;
 }
+
+
+
 
 .pure-u-md-3-5 {
 width: 40%;
@@ -183,13 +188,14 @@ body.down header.clone {
 .splash-container {
     background: #fff;
     z-index: 1;
-    overflow-y: scroll;
+   /* overflow-y: scroll;
+    overflow-x: none;*/
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 88%;
-    top: 0;
+    height: auto;
+    /*top: 0;
     left: 0;
-    position: fixed !important;
+    position: fixed !important;*/
 }
 
 .screen-slider {
@@ -207,7 +213,7 @@ body.down header.clone {
  /*   top: 100px;*/ left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: uppercase;
-    z-index: 5;
+    z-index: 1;
 }
 
 /* This is the main heading that appears on the blue section */
@@ -381,12 +387,13 @@ body.down header.clone {
 
 #Form27 label{
     padding-top: 5px; 
+
 }
 
 
 .desc {
     list-style: none;
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 700;
 
 }
@@ -442,6 +449,49 @@ text-align: center;
     margin-top: 5%;
 }
 
+.splash.sticky {
+    margin-top: 10%;
+     // set animation
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+}
+
+header{
+  position: fixed;
+  /*display: block;
+  margin: 0 auto;*/
+  width: 99%;
+  text-align: center;
+  padding-top: 9px;
+  font-size: 72px;
+  line-height: 100px;
+  height: 100px;
+  background: #fff;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+
+            // set animation
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+
+}
+
+
+header.sticky {
+  font-size: 24px;
+  line-height: 48px;
+  height: 48px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 3px;
+  background: transparent;
+  
+}
+
+header.sticky  img{
+    width: 15%;
+}
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
@@ -466,6 +516,61 @@ text-align: center;
         .home-menu ul {
             float: right;
         }
+
+
+/*.splash.sticky {
+    margin-top: 10%;
+     // set animation
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+}*/
+
+header{
+  position: fixed;
+  /*display: block;
+  margin: 0 auto;*/
+  width: 99%;
+  text-align: center;
+  padding-top: 9px;
+  font-size: 72px;
+  line-height: 100px;
+  height: 100px;
+  background: #fff;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+
+            // set animation
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+
+}
+
+
+header.sticky {
+  position: fixed;
+  /*display: block;
+  margin: 0 auto;*/
+  width: 99%;
+  text-align: center;
+  padding-top: 9px;
+  font-size: 72px;
+  line-height: 100px;
+  height: 100px;
+  background: #fff;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+
+            // set animation
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+  
+}
+
+header.sticky  img{
+    
+}
+
+
 
  
  .pure-img-responsive {
