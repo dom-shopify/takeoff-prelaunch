@@ -35,8 +35,21 @@ h4, label {
     color: orange;
 }
 
+#curebit {
+    margin-top: 15%;
+}
 
 
+#confirm-screen {
+    margin-top: 7%;
+    padding-left: 0;
+    text-align: center
+}
+
+#confirm-screen p {
+    margin-top: -7%;
+    \
+}
 
 .pure-u-md-3-5 {
 width: 40%;

@@ -78,102 +78,54 @@ window._fbq.push(['track', '6018255620311', {'value':'0.00','currency':'USD'}]);
     </header><!-- width="782" height="2000" -->
 </div>
 
-<!-- <div class="header">
-    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="/"></a>
-        <div id="logo">
-            <img class="pure-img-responsive" alt="Homie"  src="../img/common/homie-logo-big.png"></img>
+<!-- <div class="splash-container" id="confirm-screen">
+    <div class="splash pure-g"id="confirm-screen">
+        <div class="pure-u-1" id="confirm-screen">
+           <h1 class="splash-head" id="confirm-screen">Tell Your Homies about Homie</h1> </br>
+            <p class="splash-subhead" id="confirm-screen-p">
+             The more people that join, the sooner you'll get Homie!
+            </p>
         </div>
     </div>
-</div>
- -->
-<div class="splash-container">
-    <div class="splash pure-g" id="splash-downloads">
-            <div class="pure-u-1 pure-u-md-1-2">
-                 <img class="pure-img-responsive" alt="Homie"  src="../img/common/single-screen.jpg" id="app-store-img"></img>
-            </div>
+</div> -->
+<div id="curebit">
+<!-- Begin Talkable integration code -->
+<script>
+  //<![CDATA[
+    var _curebitq = _curebitq || [];
+    _curebitq.push(['init', {
+      site_id: 'homie', // REQUIRED - Talkable Site ID
+      // server: 'https://www.talkable.com' // OPTIONAL - use your own domain, that suppose to be setup as alias to talkable.com (this option is only possible for Enterprise client)
+    }]);
 
-            <div class="pure-u-1 pure-u-md-1-2">
-                <h1 class="splash-head" id="subhead-downloads">ios confirmed</h1> </br>
-                <p class="splash-subhead" id="subhead-p">
-                 You can be the first to know when we launch in the App Store.
-                </p>
+    _curebitq.push(['register_affiliate', {
+      iframe: { // REQUIRED - html attributes for iframe tag to fit page design
+        width: '100%', // REQUIRED - width of the iframe
+        height: 960, // REQUIRED - initial height of the iframe. Will be automatically updated if responsive option is set to true.
+        // container: "id-example", // OPTIONAL - Tell Talkable where to insert the iframe (ID attribute). See Asynchronous Integration for more details.
+        id: 'new_curebit_affiliate_member' // OPTIONAL - any other HTML attribute
+      },
 
-<div class="form" id="get-notified">
-                        
-<form id="form27" name="form27" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
-      action="https://customform.wufoo.com/forms/m1gmoh841t9ipyh/#public">
-  
-
-<ul>
-
-<li id="foli1" class="notranslate      ">
-<label class="desc" id="title1" for="Field1">
-First Name
-</label>
-<div>
-<input id="Field1" name="Field1" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" />
-</div>
-</li>
-<li id="foli3" class="notranslate      ">
-<label class="desc" id="title3" for="Field3">
-Email
-<span id="req_3" class="req"></span>
-</label>
-<div>
-<input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" required />
-</div>
-</li>
-<li id="foli2" class="notranslate       ">
-<label class="desc" id="title2" for="Field2">
-What Best Describes You
-<span id="req_2" class="req"></span>
-</label>
-<div>
-<select id="Field2" name="Field2" class="field select medium" tabindex="3" >
-<option value="" selected="selected">
-</option>
-<option value="I want to sell my home" >
-I want to sell my home
-</option>
-<option value="I want to buy a new home&amp;lt;" >
-I want to buy a new home
-</option>
-<option value="I want to both sell and buy" >
-I want to both sell and buy
-</option>
-<option value="I&#039;m an agent" >
-I'm an agent
-</option>
-</select>
-</div>
-</li>
-<li id="foli6" class="notranslate       ">
-<!-- <label class="desc" id="title4" for="Field4">
-Device Type
-<span id="req_4" class="req"></span>
-</label> -->
-<div>
-<input id="Field6" name="Field6" type="text" class="field text medium" value="" maxlength="255" tabindex="" onkeyup="" />
-</div>
-</li> <li class="buttons ">
-<div>
-
-                    <input id="saveForm" name="saveForm" class="btTxt submit" 
-    type="submit" value="Submit"
- /></div>
-</li>
-
-<li class="hide">
-<label for="comment">Do Not Fill This Out</label>
-<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-<input type="hidden" id="idstamp" name="idstamp" value="5aqeJ3fZW/qlF8SbemADKIxWmdc+exvOdiTTk4LLBQU=" />
-</li>
-</ul>
-</form> 
-                    </div>
-            </div>  
-    </div>
+      affiliate_member: { // OPTIONAL - Talkable will ask person to signup in case when his email is not given by merchant
+        email: '', // OPTIONAL - customer email
+        first_name: '', // OPTIONAL - customer first name
+        last_name: '', // OPTIONAL - customer last name
+        customer_id: '...', // OPTIONAL - customer ID from your site
+        gender: '...', // OPTIONAL - customer gender ('male' or 'female')
+        // person_custom_properties: { // OPTIONAL - additional customer properties
+        //     key1: 'value1', // String value
+        //     key2: '123.2' // Numeric value
+        // },
+        traffic_source: '...' // OPTIONAL - indicate person traffic source. Can be used as segmentation parameter in reporting.
+      },
+      responsive: true, // OPTIONAL - fit iframe into viewport (also on resize) and allow Talkable display mobile templates
+      // device: 'desktop', // OPTIONAL - enforce mobile/tablet/desktop view or skip this to allow Talkable choose corresponding template
+      campaign_tags: ['default'] // OPTIONAL - campaign tags for offer targeting
+    }]);
+  //]]>
+</script>
+<script src="http://d2jjzw81hqbuqv.cloudfront.net/integration/curebit-1.0.min.js" type="text/javascript"></script>
+<!-- End Talkable integration code -->
 </div>
 <!-- Begin Adroll Tag -->
 <script type="text/javascript">
